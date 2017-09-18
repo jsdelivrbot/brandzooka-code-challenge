@@ -17,6 +17,7 @@
   },
   "homepage": "http://redux.js.org",
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-polyfill": "^6.3.14",
     "css-loader": "^0.28.7",
     "react": "^0.14.7",
