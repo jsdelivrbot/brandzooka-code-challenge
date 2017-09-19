@@ -15,14 +15,12 @@ let AddTodo = ({ dispatch }) => {
         dispatch(addTodo(input.value))
         input.value = ''
       }}>
-        <input ref={node => {
+        <input className="new-todo" ref={node => {
           input = node
         }}
         placeholder="What would you like to get done?"
         />
-        <button type="submit" className="btn">
-          Add Todo
-        </button>
+
       </form>
     </div>
   )
@@ -30,3 +28,8 @@ let AddTodo = ({ dispatch }) => {
 AddTodo = connect()(AddTodo)
 
 export default AddTodo
+
+
+// <button type="submit" className="btn">
+//   Add Todo
+// </button>

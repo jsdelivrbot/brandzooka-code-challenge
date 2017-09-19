@@ -5,16 +5,17 @@ import { deleteTodo } from '../actions'
 
 let Todo = ({ dispatch, onClick, completed, text, id }) => (
    <div>
-     <li
-       onClick={onClick}
-       style={{
-         textDecoration: completed ? 'line-through' : 'none'
-       }}
-     >
-       {text}
+     <li onClick={onClick}  style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+      <div className="view">
+			<input
+				className="toggle"
+				type="checkbox"
+			/>
+        <label> {text} </label>
+        <button className="destroy" onClick={ () =>  dispatch(deleteTodo(id)) } />
+      </div>
      </li>
-     <button onClick={ () =>  dispatch(deleteTodo(id)) } > deltime </button>
-    </div>
+   </div>
 )
 
 Todo.propTypes = {

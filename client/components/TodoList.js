@@ -2,7 +2,8 @@ import React, { PropTypes } from 'react'
 import Todo from '../containers/Todo'
 
 const TodoList = ({ todos, onTodoClick }) => {
-    return ( <ul>
+    return (
+    <ul className="todo-list">
        {todos.map(todo =>
          <Todo
            key={todo.id}

@@ -29,7 +29,7 @@ wheel here, you're allowed (encouraged even) to use some open source project(s) 
 
 2) Hey, I don't actually want to do my todo, but I can't delete it. That's no good. Add this functionality in.
 
-3) I'm really proud of having completed my ToDo, I wish there was a way I could tell everyone how awesome I am. Please add a way to 
+3) I'm really proud of having completed my ToDo, I wish there was a way I could tell everyone how awesome I am. Please add a way to
 share my completed ToDo on either Twitter or Facebook.
 
 4) BONUS! Right now we lose all our ToDo's as soon as we refresh the page. It'd be really nice save these off somewhere so we don't lose
@@ -37,7 +37,7 @@ the information. Do this somehow.
 
 ## Rules of the road
 
-1) We want to see how you work, and how you think, so it makes sense that we'd want you to do this yourself. That being said, google 
+1) We want to see how you work, and how you think, so it makes sense that we'd want you to do this yourself. That being said, google
 is your friend, feel free to search the web for anything you think might help you.
 
 2) Once you're ready to submit, push your updated repository to a public repo on Github or Bitbucket, and send us a link.
