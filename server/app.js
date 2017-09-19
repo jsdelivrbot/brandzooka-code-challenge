@@ -9,9 +9,18 @@ var app = express();
 
 const api = require(`./routes/api`);
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+// app.use(function (req, res, next) {
+//   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+//
+//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+//
+//   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+//
+//   res.setHeader('Access-Control-Allow-Credentials', true);
+//
+//   next()
+// })
+
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
