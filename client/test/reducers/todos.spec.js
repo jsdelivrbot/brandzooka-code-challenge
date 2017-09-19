@@ -109,4 +109,30 @@ describe('todos reducer', () => {
     ])
   })
 
+  it('should handle DELETE_TODO', () => {
+    expect(
+      todos([
+        {
+          text: 'Run the tests',
+          completed: false,
+          id: 1
+        }, {
+          text: 'Use Redux',
+          completed: false,
+          id: 0
+        }
+      ], {
+        type: 'DELETE_TODO',
+        id: 1
+      })
+    ).toEqual([
+      {
+        text: 'Use Redux',
+        completed: false,
+        id: 0
+      }
+    ])
+  })
+
+
 })

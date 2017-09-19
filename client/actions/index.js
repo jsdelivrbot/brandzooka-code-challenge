@@ -22,7 +22,6 @@ export const toggleTodo = (id) => {
 }
 
 export const deleteTodo = (id) => {
-   console.log("DELETE ACTINO", id);
   return {
     type: 'DELETE_TODO',
     id
