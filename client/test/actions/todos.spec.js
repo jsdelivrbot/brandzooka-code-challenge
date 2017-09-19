@@ -1,6 +1,7 @@
 import expect from 'expect'
 import * as actions from '../../actions'
 
+
 describe('todo actions', () => {
   it('addTodo should create ADD_TODO action', () => {
     expect(actions.addTodo('Use Redux')).toEqual({
@@ -26,7 +27,8 @@ describe('todo actions', () => {
 
 
 it('deleteTodo should create DELETE_TODO action', () => {
-  expect(actions.deleteTodo(1)).toEqual({
+  expect(actions.deleteTodo(1)).toEqual(
+     {
     type: 'DELETE_TODO',
     id: 1
   })
