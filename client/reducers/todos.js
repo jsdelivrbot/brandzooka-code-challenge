@@ -16,7 +16,7 @@ const todo = (state, action) => {
       })
    case 'DELETE_TODO':
     console.log('TODO delete', state);
-     return Object.assign({}, state)
+     return Object.assign([], state)
     default:
       return state
   }

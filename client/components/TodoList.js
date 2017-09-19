@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react'
 import Todo from './Todo'
 
-const TodoList = ({ todos, onTodoClick }) => (
-     <ul>
+const TodoList = ({ todos, onTodoClick }) => {
+   console.log('i can log anywhere', todos);
+    return ( <ul>
        {todos.map(todo =>
          <Todo
            key={todo.id}
@@ -11,7 +12,8 @@ const TodoList = ({ todos, onTodoClick }) => (
          />
        )}
      </ul>
-)
+  )
+}
 
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.shape({
