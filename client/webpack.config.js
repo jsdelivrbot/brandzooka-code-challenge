@@ -23,7 +23,17 @@ module.exports = {
         loaders: [ 'babel' ],
         exclude: /node_modules/,
         include: __dirname
-     }
-    ]
+     },
+     {
+                test: /\.css$/,
+                loader:'style!css!'
+        }
+  ],
+  rules: [
+    {
+      test: /\.css$/,
+      use: [ 'style-loader', 'css-loader' ]
+    }
+   ]
   }
 }
