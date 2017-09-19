@@ -1,6 +1,7 @@
 const todo = (state, action) => {
   switch (action.type) {
     case 'ADD_TODO':
+    //
       return {
         id: action.id,
         text: action.text,
@@ -24,16 +25,28 @@ const todo = (state, action) => {
 const todos = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TODO':
-      return [
+      let newAddState = [
         ...state,
         todo(undefined, action)
       ]
+      //set LS to newstate.stringy
+      return newAddState
+      break
     case 'TOGGLE_TODO':
       return state.map(t =>
         todo(t, action)
       )
    case 'DELETE_TODO':
-     return todo(state.filter((t) => action.id !== t.id), action)
+     let newDeleteState = todo(state.filter((t) => action.id !== t.id), action)
+
+     //set LS to newstate.stringy
+     return newDeleteState
+     break
+     //--------------
+     //GRAB TOD0 case
+     //check local storage (.get item)
+     //if !empty return json parse of LS
+     //else return state
     default:
       return state
   }
