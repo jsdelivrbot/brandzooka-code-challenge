@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import Todo from '../containers/Todo'
 
 const TodoList = ({ todos, onTodoClick }) => {
-   console.log('logging in todolist');
+   console.log('logging in todolist', typeof todos, todos);
     return ( <ul>
        {todos.map(todo =>
          <Todo

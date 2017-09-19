@@ -5,6 +5,8 @@ import TodoList from '../components/TodoList'
 
 
 const getVisibleTodos = (todos, filter) => {
+   console.log('in VisibleTodoList, todos are', typeof todos, todos);
+   
   switch (filter) {
     case 'SHOW_ALL':
       return todos
