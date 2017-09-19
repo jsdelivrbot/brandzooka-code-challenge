@@ -29,7 +29,8 @@ const todos = (state = [], action) => {
         ...state,
         todo(undefined, action)
       ]
-      //set LS to newstate.stringy
+      console.log('this is new add state', newAddState);
+      localStorage.setItem('todoItems', JSON.stringify(newAddState));
       return newAddState
       break
     case 'TOGGLE_TODO':
@@ -38,8 +39,8 @@ const todos = (state = [], action) => {
       )
    case 'DELETE_TODO':
      let newDeleteState = todo(state.filter((t) => action.id !== t.id), action)
-
-     //set LS to newstate.stringy
+     console.log('this is new delete state', newDeleteState);
+     localStorage.setItem('todoItems', JSON.stringify(newDeleteState));
      return newDeleteState
      break
      //--------------

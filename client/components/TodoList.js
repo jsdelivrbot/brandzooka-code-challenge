@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react'
 import Todo from './Todo'
 
 const TodoList = ({ todos, onTodoClick }) => {
-   console.log('i can log anywhere', todos);
     return ( <ul>
        {todos.map(todo =>
          <Todo
