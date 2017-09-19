@@ -8,6 +8,7 @@ import NavBar from './NavBar'
 import Toggles from './Toggles'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
+import MediaShare from "./MediaShare"
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
                 <VisibleTodoList />
                 <Toggles />
             </div>
+            <MediaShare />
         </div>
             )
          }
