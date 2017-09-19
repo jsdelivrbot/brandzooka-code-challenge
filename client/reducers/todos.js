@@ -31,7 +31,6 @@ const todos = (state = [], action) => {
       ]
       localStorage.setItem('todoItems', JSON.stringify(newAddState));
       return newAddState
-      break
     case 'TOGGLE_TODO':
       return state.map(t =>
         todo(t, action)
@@ -40,12 +39,11 @@ const todos = (state = [], action) => {
      let newDeleteState = todo(state.filter((t) => action.id !== t.id), action)
      localStorage.setItem('todoItems', JSON.stringify(newDeleteState));
      return newDeleteState
-     break
-     //--------------
-     //GRAB TOD0 case
-     //check local storage (.get item)
-     //if !empty return json parse of LS
-     //else return state
+
+     case 'GRAB_TODOS':
+       let newGrabState = localStorage.getItem('todoItems');
+       console.log('newGrabState', newGrabState)
+       return state
     default:
       return state
   }

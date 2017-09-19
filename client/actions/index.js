@@ -28,4 +28,8 @@ export const deleteTodo = (id) => {
   }
 }
 
-//GRAB todo grabs local storage 
+export const grabTodos = () => {
+  return {
+    type: 'GRAB_TODOS'
+  }
+}
