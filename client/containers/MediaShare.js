@@ -12,10 +12,10 @@ const FacebookIcon = generateShareIcon('facebook');
 class MediaShare extends Component {
    render(){
       let testQuote = 'some things'
-      let shareUrl = 'reddit.com'
+      let shareUrl = 'brandzooka.com/register'
       let hashtags = ['Brandzooka', 'Code', 'Challenge']
       let completedTasks = this.props.todos.filter((item) => item.completed).map((obj) => " " + obj.text)
-      let title = `hey take a look at all the tasks I just completed: ${completedTasks}`
+      let title = `Hey, check out all the tasks I've completed: ${completedTasks.slice(0,completedTasks.length -1)}, and${completedTasks.slice(-1)}.`
 
       return (
          <div className="flexContainer">
@@ -33,6 +33,7 @@ class MediaShare extends Component {
                 <FacebookShareButton
                   url={shareUrl}
                   quote={ title }
+                  hashtag={"#Brandzooka"}
                   className="Demo__some-network__share-button">
                   <FacebookIcon
                     size={32}
