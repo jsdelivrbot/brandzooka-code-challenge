@@ -8,7 +8,7 @@ import Toggles from '../components/Toggles'
 import AddTodo from './AddTodo'
 import VisibleTodoList from './VisibleTodoList'
 import MediaShare from "./MediaShare"
-
+import Acknowledgment from "../components/Acknowledgment"
 
 class App extends Component {
    componentDidMount() {
@@ -17,13 +17,14 @@ class App extends Component {
    render() {
       return(
         <div>
+            <div className="container todoApp">
             <h1> todos </h1>
-            <div className="container">
                 <AddTodo />
                 <VisibleTodoList />
                 <Toggles />
             </div>
             <MediaShare />
+            <Acknowledgment />
         </div>
             )
          }

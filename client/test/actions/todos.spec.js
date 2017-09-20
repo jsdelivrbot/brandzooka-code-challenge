@@ -33,4 +33,14 @@ it('deleteTodo should create DELETE_TODO action', () => {
     id: 1
   })
 })
+
+it('grabTodos should create GRAB_TODOS action', () => {
+  expect(actions.grabTodos()).toEqual(
+     {
+    type: 'GRAB_TODOS'
+  })
+})
+
+
+
 })

@@ -137,5 +137,13 @@ describe('todos reducer', () => {
     ])
   })
 
+  it('should handle GRAB_TODOS', () => {
+    expect(
+      todos([], {
+        type: 'GRAB_TODOS'
+      })
+    ).toEqual( [ { text: 'Use Redux', completed: false, id: 0 } ])
+  })
+
 
 })
