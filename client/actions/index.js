@@ -1,6 +1,6 @@
 
 export const addTodo = (text) => {
-   let currentId = localStorage.getItem('todoItems')? JSON.parse(localStorage.getItem('todoItems')).slice(-1)[0].id : -1
+   let currentId = localStorage.getItem('todoItems') !== null && JSON.parse(localStorage.getItem('todoItems')).length > 0? JSON.parse(localStorage.getItem('todoItems')).slice(-1)[0].id : -1
   return {
     type: 'ADD_TODO',
     id: currentId + 1,

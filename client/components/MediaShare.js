@@ -1,18 +1,9 @@
 import React, { Component } from 'react'
-import { ShareButtons, ShareCounts, generateShareIcon } from 'react-share';
+import { ShareButtons, generateShareIcon } from 'react-share';
 
 const {
    FacebookShareButton,
-   GooglePlusShareButton,
-   LinkedinShareButton,
    TwitterShareButton,
-   TelegramShareButton,
-   WhatsappShareButton,
-   PinterestShareButton,
-   VKShareButton,
-   OKShareButton,
-   RedditShareButton,
-   EmailShareButton,
 } = ShareButtons;
 const TwitterIcon = generateShareIcon('twitter');
 const FacebookIcon = generateShareIcon('facebook');
@@ -24,7 +15,7 @@ export default class MediaShare extends Component {
       let title = `hey I just completed ${testQuote}`
       let hashtags = ['Brandzooka', 'Code', 'Challenge']
       return (
-         <div> hey
+         <div>
                    <FacebookShareButton
                      url={shareUrl}
                      quote="hey check out this cool website"

@@ -42,7 +42,6 @@ const todos = (state = [], action) => {
 
      case 'GRAB_TODOS':
        let newGrabState = localStorage.getItem('todoItems');
-       console.log('newGrabState', JSON.parse(newGrabState))
        return JSON.parse(newGrabState)?  JSON.parse(newGrabState) : state
     default:
       return state
