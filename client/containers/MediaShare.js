@@ -11,11 +11,11 @@ const FacebookIcon = generateShareIcon('facebook');
 
 class MediaShare extends Component {
    render(){
-      let testQuote = 'some things'
       let shareUrl = 'brandzooka.com/register'
       let hashtags = ['Brandzooka', 'Code', 'Challenge']
       let completedTasks = this.props.todos.filter((item) => item.completed).map((obj) => " " + obj.text)
-      let title = `Hey, check out all the tasks I've completed: ${completedTasks.slice(0,completedTasks.length -1)}, and${completedTasks.slice(-1)}.`
+      let tasksPost = completedTasks.length > 1 ? `${completedTasks.slice(0,completedTasks.length -1)}, and${completedTasks.slice(-1)}.` : `${completedTasks}`
+      let title = completedTasks.length > 0 ? `Hey, check out all the tasks I've completed: ${tasksPost}` : "I didn't complete any tasks but figured I could motivate myself by broadcasting my indolence"
 
       return (
          <div className="flexContainer">
