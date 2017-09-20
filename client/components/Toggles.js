@@ -12,7 +12,7 @@ const Toggles = () => (
     <FilterLink filter="SHOW_ACTIVE" className="filterToggle">
       Active
     </FilterLink>
-      {"                  "}
+      {"    "}
     <FilterLink filter="SHOW_COMPLETED" className="filterToggle">
       Completed
     </FilterLink>

@@ -3,7 +3,6 @@ import '../style/app.css';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { grabTodos } from '../actions'
-import NavBar from '../components/NavBar'
 import Toggles from '../components/Toggles'
 import AddTodo from './AddTodo'
 import VisibleTodoList from './VisibleTodoList'
@@ -39,4 +38,3 @@ function mapDispatchToProps (dispatch) {
 }
 
 export default connect (mapStateToProps, mapDispatchToProps)(App)
-// export default connect((state) => state, { grabTodos })(App);
