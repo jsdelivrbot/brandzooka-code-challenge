@@ -17,8 +17,7 @@ class App extends Component {
    render() {
       return(
         <div>
-        <h1> todos </h1>
-          <NavBar />
+            <h1> todos </h1>
             <div className="container">
                 <AddTodo />
                 <VisibleTodoList />

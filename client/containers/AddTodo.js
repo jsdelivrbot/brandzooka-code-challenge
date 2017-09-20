@@ -15,7 +15,7 @@ let AddTodo = ({ dispatch }) => {
         dispatch(addTodo(input.value))
         input.value = ''
       }}>
-        <input className="new-todo" ref={node => {
+        <input autoFocus className="new-todo" ref={node => {
           input = node
         }}
         placeholder="What would you like to get done?"

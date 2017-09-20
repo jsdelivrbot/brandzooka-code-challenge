@@ -59,12 +59,6 @@ input[type="checkbox"] {
 }
 
 
-/*.todoapp input::input-placeholder {
-	font-style: italic;
-	font-weight: 300;
-	color: #e6e6e6;
-}*/
-
 .todoapp h1 {
 	position: absolute;
 	top: -70px;
@@ -175,7 +169,6 @@ input[type="checkbox"] {
 	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#d7d5d5" stroke-width="3"/></svg>');
 }
 
-
 .completed {
 	text-decoration: line-through;
 	color: rgba(0, 0, 0, 0.25)
@@ -233,8 +226,10 @@ input[type="checkbox"] {
 
 .footer {
 	color: #777;
-	padding: 10px 15px;
-	height: 20px;
+	padding: 12px 15px;
+	height: 30px;
+	padding-bottom: 30px;
+	margin: 0;
 	text-align: center;
 	border-top: 1px solid #e6e6e6;
 }
@@ -290,6 +285,10 @@ input[type="checkbox"] {
 	border-color: rgba(175, 47, 47, 0.1);
 }
 
+.filterToggle{
+	margin-left: 10px;
+}
+
 .filters li a.selected {
 	border-color: rgba(175, 47, 47, 0.2);
 }
@@ -330,6 +329,22 @@ html .clear-completed:active {
 	text-decoration: underline;
 }
 
+p > span, p > a {
+	font-size: 16.8px;
+}
+
+.flexContainer {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: rgba(157, 157, 157, 0.05);
+	border-top: 1px solid #e6e6e6;
+}
+
+.flexItem {
+		margin: 0 15px;
+		font-size: 15px;
+}
 /*
 	Hack to remove background from Mobile Safari.
 	Can't use it globally since it destroys checkboxes in Firefox

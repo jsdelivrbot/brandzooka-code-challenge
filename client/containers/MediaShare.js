@@ -15,12 +15,11 @@ class MediaShare extends Component {
       let shareUrl = 'reddit.com'
       let hashtags = ['Brandzooka', 'Code', 'Challenge']
       let completedTasks = this.props.todos.filter((item) => item.completed).map((obj) => " " + obj.text)
-      console.log('texts', completedTasks)
       let title = `hey take a look at all the tasks I just completed: ${completedTasks}`
 
       return (
-         <div>
-            <div>
+         <div className="flexContainer">
+            <div className="flexItem">Share your accomplishments</div>
                <TwitterShareButton
                url={shareUrl}
                title={title}
@@ -30,8 +29,7 @@ class MediaShare extends Component {
                size={32}
                round />
                </TwitterShareButton>
-            </div>
-            <div>
+            <div className="flexItem">
                 <FacebookShareButton
                   url={shareUrl}
                   quote={ title }
@@ -47,7 +45,6 @@ class MediaShare extends Component {
 }
 
 function mapStateToProps (state) {
-   console.log('media state.todos', state.todos);
    return { todos: state.todos}
 }
 
