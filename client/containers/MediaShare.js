@@ -34,7 +34,7 @@ class MediaShare extends Component {
             <div>
                 <FacebookShareButton
                   url={shareUrl}
-                  quote="hey check out this cool website"
+                  quote={ title }
                   className="Demo__some-network__share-button">
                   <FacebookIcon
                     size={32}

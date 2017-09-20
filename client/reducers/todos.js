@@ -32,9 +32,9 @@ const todos = (state = [], action) => {
       localStorage.setItem('todoItems', JSON.stringify(newAddState));
       return newAddState
     case 'TOGGLE_TODO':
-      return state.map(t =>
-        todo(t, action)
-      )
+      let newToggleState = state.map(t => todo(t, action))
+      localStorage.setItem('todoItems', JSON.stringify(newToggleState));
+      return newToggleState
    case 'DELETE_TODO':
      let newDeleteState = todo(state.filter((t) => action.id !== t.id), action)
      localStorage.setItem('todoItems', JSON.stringify(newDeleteState));

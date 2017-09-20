@@ -8,6 +8,7 @@ let Todo = ({ dispatch, onClick, completed, text, id }) => (
      className={ completed ? 'completed' : '' }>
       <div className="view">
 			<input
+            id={ completed ? 'checkToggle' : 'uncheckToggle' }
             onClick={onClick}
 				className="toggle"
 				type="checkbox"
