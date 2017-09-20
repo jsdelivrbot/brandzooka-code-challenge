@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-
 import '../style/app.css';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { grabTodos } from '../actions'
-import NavBar from './NavBar'
-import Toggles from './Toggles'
-import AddTodo from '../containers/AddTodo'
-import VisibleTodoList from '../containers/VisibleTodoList'
+import NavBar from '../components/NavBar'
+import Toggles from '../components/Toggles'
+import AddTodo from './AddTodo'
+import VisibleTodoList from './VisibleTodoList'
 import MediaShare from "./MediaShare"
 
 
