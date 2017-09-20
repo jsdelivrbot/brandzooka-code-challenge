@@ -2,7 +2,7 @@ import React from 'react'
 
 const Acknowledgment = () => {
   return (
-     <div className="info"> This application has been brought to you by The Brankzooka Code Challenge™ </div>
+     <div className="info"> This application is brought to you by The Brandzooka Code Challenge™ </div>
   )
 }
 

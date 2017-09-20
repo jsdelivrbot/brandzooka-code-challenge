@@ -11,9 +11,10 @@ These instructions will get you a copy of the project up and running on your loc
 A prerequisite to running this application is to have node and npm installed
 In order to run locally:
    - cd into the client directory
-   - npm instal
+   - npm install
    - npm start
-The application should run on localhost:3000
+
+(The application should run on localhost:3000)
 
 ## Running the tests
 
@@ -34,4 +35,4 @@ To run the tests, simply run the following command from the client directory:
 ## Acknowledgments
 
 * A big thank you to Brandzooka for granting me the opportunity to take this challenge
-* I'd also like to thank Kaiba, my furry companion, for hanging out with me while I coded and for being such a good dog
+* I'd also like to thank Kaiba, my furry companion, for hanging out with me while I coded and for being such a good pup
